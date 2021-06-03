@@ -33,7 +33,10 @@ export default {
 </script>
 <!--Reset da Tela para otimização -->
 <style lang="stylus">
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .home {
+  font-family: 'Poppins', sans-serif;
   display: flex;
 }
 </style>

@@ -25,7 +25,6 @@
             <div class="pointer" />
             <p>Excluir</p>
             <div class="delete-task">
-              <h1>Delete task</h1>
               <DeleteTask />
             </div>
           </div>
@@ -56,6 +55,19 @@ export default {
     placeCategorie: String,
     categorie: String,
     checked: String,
+  },
+  methods: {
+    funcDelete() {
+      const deleteDisplay = $(".delete-task");
+      const btnOpenDeleteOption = $(".remove-option");
+
+      $(btnOpenDeleteOption).on("click", () => {
+        $(deleteDisplay).fadeIn();
+      });
+    },
+  },
+  mounted() {
+    this.funcDelete();
   },
 };
 </script>

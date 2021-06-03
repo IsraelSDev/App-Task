@@ -4,6 +4,7 @@
     <Navbar />
     <Categories />
     <TaskScreem />
+    <AddTask display="none" />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import Categories from "../components/Categories";
 import TaskScreem from "../components/TaskScreem";
+import AddTask from "../components/AddTask";
 
 export default {
   name: "Home",
@@ -20,6 +22,7 @@ export default {
     Navbar,
     Categories,
     TaskScreem,
+    AddTask,
   },
 };
 </script>

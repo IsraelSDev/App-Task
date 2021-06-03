@@ -1,0 +1,119 @@
+.container-add-task img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 88%;
+    right: 2%;
+}
+
+.add-new-task {
+    width: 100%;
+    position: absolute;
+    display: none;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgba(135, 153, 171, 0.6);
+
+    .form-add-task {
+        width: 40%;
+        padding: 2% 0 2% 2%;
+        margin: 10% auto;
+        background-color: white;
+        border-radius: 10px;
+
+        .form-title {
+            width: 100%;
+            margin-bottom: 5%;
+
+            h2 {
+                width: 95%;
+                color: #283848;
+            }
+
+            a {
+                cursor: pointer;
+                padding: -2% 0 0 0;
+                font-size: 1.3em;
+                text-decoration: none;
+            }
+
+            display: flex;
+        }
+
+        .title, .description {
+            p {
+                font-weight: bold;
+                font-size: 0.9rem;
+                margin: 10px 0;
+                color: #667a8d;
+            }
+
+            input {
+                width: 90%;
+                height: 50px;
+                border: 2px solid #bfdaeb;
+                border-radius: 5px;
+                outline-color: #2693ff;
+                padding: 0 2%;
+                font-size: 1.2rem;
+            }
+
+            .description-box {
+                padding: 2%;
+                font-size: 1.2rem;
+                height: 200px;
+                outline-color: #2693ff;
+                width: 90%;
+                resize: none;
+                border: 2px solid #bfdaeb;
+                border-radius: 5px;
+            }
+        }
+
+        .options {
+            display: flex;
+            padding: 2%;
+
+            p {
+                align-self: center;
+                margin: 0 10px;
+                color: #667a8d;
+                font-weight: bold;
+            }
+
+            input[type='radio'] {
+                width: 20px;
+                height: 20px;
+                color: #667a8d;
+                align-self: center;
+            }
+
+            .input-submit {
+                text-align: right;
+                width: 70%;
+                padding: 0 8%;
+            }
+
+            input[type='submit'] {
+                margin-right: 0;
+                background-color: #a6c1d2;
+                width: 150px;
+                height: 50px;
+                border-radius: 5px;
+                color: white;
+                font-weight: bold;
+                font-size: 1rem;
+                border: 0;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.container-add-task:hover {
+    .add-new-task {
+        display: block;
+    }
+}

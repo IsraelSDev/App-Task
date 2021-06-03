@@ -1,3 +1,4 @@
+<!--Barra de navegação Lateral do Dashboard -->
 <template>
   <div class="sidebar">
     <div class="logo">
@@ -20,14 +21,14 @@
             <font-awesome-icon class="icon" icon="check-circle" />
             <p>Tarefas</p>
           </div>
-          <!--option-->
+          <!--option-task-->
         </router-link>
         <router-link to="/settings">
           <div class="option">
             <font-awesome-icon class="icon" icon="cogs" />
             <p>Configurações</p>
           </div>
-          <!--option-->
+          <!--option-settings-->
         </router-link>
       </div>
       <!--options-dash-->
@@ -38,6 +39,7 @@
 </template>
 
 <script>
+/* Import da folha de estilos */
 import {} from "./styles/sidebar.styl";
 
 export default {

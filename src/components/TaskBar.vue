@@ -1,4 +1,5 @@
-,<template>
+<!--Barra de Tarefas -->
+<template>
   <div :class="checked" class="task-bar">
     <div class="check-box"></div>
     <!--check-box-->
@@ -39,7 +40,10 @@
 </template>
 
 <script>
+/* Import da folha de Estilos */
 import {} from "./styles/taskbar.styl";
+
+/* Import de Componentes */
 import DeleteTask from "./DeleteTask";
 
 export default {

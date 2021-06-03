@@ -14,14 +14,16 @@ import Sidebar from "../components/Sidebar";
 export default {
   components: {
     Sidebar,
-    Navbar
+    Navbar,
   },
 };
-    Navbar
+Navbar;
 </script>
 <style lang="stylus">
 .about {
   display: flex;
-  flex-wrapper: wrap
+  flex-wrapper: wrap;
 }
+.about-content{
+  padding: 2%}
 </style>

@@ -1,3 +1,4 @@
+<!--Aba de Categorias lateral do DashBoard -->
 <template>
   <div class="container-categories">
     <div class="categories-wraper">
@@ -21,6 +22,8 @@
   <!--container-categories-->
 </template>
 <script>
+
+/* Import da folha de Estilos */
 import {} from "./styles/categories.styl";
 
 export default {

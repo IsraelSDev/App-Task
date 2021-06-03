@@ -1,3 +1,5 @@
+<!-- Tela de Login --> 
+<!-- Acessada inserindo "/login" na barra de pesquisa -->
 <template>
   <div class="container-login">
     <div class="logo-part-wraper">
@@ -6,6 +8,7 @@
         <p><strong>FACILITA</strong> TASKS</p>
         <h6>Gestão de tarefas pessoais</h6>
       </div>
+      <!--logo-part-box-->
     </div>
     <!--logo-part-->
     <div class="form-login-wraper">
@@ -16,18 +19,22 @@
             <p>Nome de usuário ou e-mail:</p>
             <input type="text" required />
           </div>
+          <!--email-wraper-->
           <div class="password-wraper">
             <p>Senha:</p>
             <input type="password" required />
           </div>
-          <input type="submit" value="Entrar"/>
+          <!--password-wraper-->
+          <input type="submit" value="Entrar" />
         </form>
         <div class="link-forgot-my-pass">
           <a href="#" target="_blank">Esqueci minha senha</a>
         </div>
+        <!--link-forgot-my-pass-->
         <div class="remover">
           <a href="/home">Home >>></a>
         </div>
+        <!--remover-->
       </div>
       <!--login-box-->
     </div>
@@ -36,8 +43,8 @@
 </template>
 
 <script>
-
-import {} from './styles/login.styl';
+/* Importando folha de Estilos */
+import {} from "./styles/login.styl";
 
 export default {
   name: "Login",

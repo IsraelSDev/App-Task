@@ -1,3 +1,4 @@
+<!--Barra Superior de Navegação -->
 <template>
   <div class="navbar">
     <div class="nav-wraper">
@@ -15,7 +16,9 @@
 </template>
 
 <script>
+/* Import da folha de Estilos */
 import {} from "./styles/navbar.styl";
+
 export default {
   name: "Navbar",
   props: {},

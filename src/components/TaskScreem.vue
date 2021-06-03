@@ -1,3 +1,4 @@
+<!--Tela de Pesquisa, e View das Tarefas -->
 <template>
   <div class="container-tasks-screem">
     <div class="taskscreem-wraper">
@@ -36,7 +37,10 @@
 </template>
 
 <script>
+/* Import da folha de Estilos */
 import {} from "./styles/taskscreem.styl";
+
+/* Import de Componentes */
 import TaskBar from "./TaskBar.vue";
 
 export default {

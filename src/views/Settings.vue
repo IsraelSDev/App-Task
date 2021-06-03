@@ -1,3 +1,4 @@
+<!--Tela de Configurações do DashBoard --> 
 <template>
   <div class="about">
     <Sidebar />
@@ -10,8 +11,10 @@
 </template>
 
 <script>
+/* Import de Componentes */
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
+
 export default {
   components: {
     Sidebar,
@@ -20,12 +23,8 @@ export default {
 };
 </script>
 <style lang="stylus">
-.about {
-  
-}
-
 .about-content {
   margin-top: 6%;
-  width: 100%
+  width: 100%;
 }
 </style>

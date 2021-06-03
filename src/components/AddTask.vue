@@ -1,3 +1,4 @@
+<!--Tela de adição de uma nova tarefa -->
 <template>
   <div class="container-add-task">
     <a href="">
@@ -32,6 +33,7 @@
                 <input type="submit" value="Adicionar" />
               </a>
             </div>
+            <!--input-submit-->
           </div>
           <!--options-->
         </form>
@@ -44,7 +46,9 @@
 </template>
 
 <script>
+/* Import da folha de Estilos */
 import {} from "./styles/addtask.styl";
+
 export default {
   name: "AddTask",
   props: {},

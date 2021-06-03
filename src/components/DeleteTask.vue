@@ -1,3 +1,4 @@
+<!--Tela de Delete de uma Tarefa -->
 <template>
   <div class="delete-task">
     <div class="delete-task-box">
@@ -21,6 +22,8 @@
   <!--container-delete-task-->
 </template>
 <script>
+
+/* Import da folha de Estilos */
 import {} from "./styles/deletetask.styl";
 
 export default {

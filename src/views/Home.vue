@@ -1,15 +1,17 @@
+<!--Primeira tela, padrão do dashboard do sistema -->
 <template>
   <div class="home">
     <Sidebar />
     <Navbar />
     <Categories />
     <TaskScreem />
-    <AddTask display="none" />
+    <AddTask />
     <DeleteTask />
   </div>
 </template>
 
 <script>
+/* Import de Componentes */
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import Categories from "../components/Categories";
@@ -29,6 +31,7 @@ export default {
   },
 };
 </script>
+<!--Reset da Tela para otimização -->
 <style lang="stylus">
 .home {
   display: flex;

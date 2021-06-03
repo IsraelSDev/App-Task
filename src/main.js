@@ -16,6 +16,7 @@ library.add(faCheckCircle);
 library.add(faCogs);
 library.add(faSearch);
 
+/* Instância do FontAwesome */
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;
 

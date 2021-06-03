@@ -6,11 +6,11 @@
 
     .categories-wraper {
         align-self: center;
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
 
         .categories-title {
-            padding-bottom: 25%;
+            padding-bottom: 30%;
             font-size: 1.2rem;
             opacity: 0.6;
         }
@@ -19,34 +19,30 @@
             font-size: 1.1rem;
 
             ul {
+                width: 100%;
+                // background-color: black;
                 list-style-position: inside;
                 list-style-image: url('../../assets/arrow-list.png');
 
-                .urgent, .important {
-                    display: flex;
-                    max-height: 50px;
+                .mark-urgent, .mark-important {
+                    padding: 4px 8px;
+                    border-radius: 50%;
+                    color: white;
+                    text-align: center;
+                    background-color: #f90059;
+                }
 
-                    .mark-urgent, .mark-important {
-                        width: 25px;
-                        text-align: center;
-                        margin: 5px;
-                        padding: 1%;
-                        align-self: center;
-                        color: white;
-                        background-color: #ff2e79;
-                        border-radius: 50%;
-                    }
-
-                    .mark-important {
-                        background-color: #ffc42e;
-                    }
+                .mark-important {
+                    background-color: #ffc42e;
                 }
 
                 li {
                     cursor: pointer;
-                    margin: 10% 0;
-                    opacity: 0.5;
+                    margin: 15% 0;
+                    opacity: 1;
                     font-weight: bold;
+                    font-size: 1rem;
+                    color: #73808b;
 
                     a {
                         text-decoration: none;
@@ -60,5 +56,13 @@
                 }
             }
         }
+    }
+}
+
+.active {
+    list-style-image: url('../../assets/arrow-list-blue.png');
+
+    a {
+        color: #2693FF;
     }
 }

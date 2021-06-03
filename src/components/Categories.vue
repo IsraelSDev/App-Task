@@ -7,23 +7,9 @@
       <!--categories-title-->
       <div class="categories-list">
         <ul>
-          <li><a>Todas</a></li>
-          <div class="urgent">
-            <li><a>Urgentes</a></li>
-            <div class="mark-urgent">
-              <p>1</p>
-            </div>
-            <!--mark-urgent-->
-          </div>
-          <!--urgent-->
-          <div class="important">
-            <li><a>Importantes</a></li>
-            <div class="mark-important">
-              <p>2</p>
-            </div>
-            <!--mark-important-->
-          </div>
-          <!--important-->
+          <li class="active"><a >Todas</a></li>
+          <li><a>Urgentes </a><span class="mark-urgent">1</span></li>
+          <li><a>Importantes </a><span class="mark-important">2</span></li>
           <li><a>Outras</a></li>
           <li><a>Finalizadas</a></li>
         </ul>

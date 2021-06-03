@@ -64,23 +64,23 @@ export default {
 
       $(check).on("click", () => {
         if (el.value.length > 0) {
-          $(sub).css("background-color", "#16d08d");
+          $(sub).css({ transition: "0.3s", "background-color": "#16d08d" });
         } else if (el.value.length == 0) {
-          $(sub).css("background-color", "#a6c1d2");
+          $(sub).css({ transition: "0.3s", "background-color": "#a6c1d2" });
         }
       });
       $(checks).on("click", () => {
         if (el.value.length > 0) {
-          $(sub).css("background-color", "#16d08d");
+          $(sub).css({ transition: "0.3s", "background-color": "#16d08d" });
         } else if (el.value.length == 0) {
-          $(sub).css("background-color", "#a6c1d2");
+          $(sub).css({ transition: "0.3s", "background-color": "#a6c1d2" });
         }
       });
       $(textArea).on("click", () => {
         if (el.value.length > 0) {
-          $(sub).css("background-color", "#16d08d");
+          $(sub).css({ transition: "0.3s", "background-color": "#16d08d" });
         } else if (el.value.length == 0) {
-          $(sub).css("background-color", "#a6c1d2");
+          $(sub).css({ transition: "0.3s", "background-color": "#a6c1d2" });
         }
       });
       /* Alterar a cor do Botão enviar ---END */

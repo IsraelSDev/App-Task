@@ -60,9 +60,16 @@ export default {
     funcDelete() {
       const deleteDisplay = $(".delete-task");
       const btnOpenDeleteOption = $(".remove-option");
+      const btnOpenEditOption = $(".edit-option");
+      const elAddNewTask = $(".add-new-task");
+
 
       $(btnOpenDeleteOption).on("click", () => {
         $(deleteDisplay).fadeIn();
+      });
+
+      $(btnOpenEditOption).on("click", () => {
+        $(elAddNewTask).fadeIn();
       });
     },
   },

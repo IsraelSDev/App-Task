@@ -2,6 +2,7 @@
   <div class="about">
     <Sidebar />
     <Navbar />
+
     <div class="about-content">
       <h1>Tasks</h1>
     </div>
@@ -11,10 +12,13 @@
 <script>
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+
+
 export default {
   components: {
     Sidebar,
     Navbar,
+   
   },
 };
 Navbar;

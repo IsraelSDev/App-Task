@@ -15,16 +15,20 @@
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 
+
+
 export default {
   components: {
     Sidebar,
     Navbar,
+   
   },
 };
 </script>
 <style lang="stylus">
 .about-content {
   margin-top: 6%;
-  width: 100%;
+  width: 120%;
+
 }
 </style>

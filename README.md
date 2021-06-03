@@ -1,6 +1,13 @@
 # app-facilita
 
-## Veja Online em: https://app-task.vercel.app/#/login
+## Veja Online em:
+```
+https://app-task.vercel.app/#/login
+```
+## Dashboard do App em:
+```
+https://app-task.vercel.app/#/home
+```
 
 ## Project setup
 ```

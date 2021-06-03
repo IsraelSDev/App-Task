@@ -9,7 +9,7 @@
     <div class="options-dash-wraper">
       <div class="options-dash">
         <router-link to="/">
-          <div class="option">
+          <div class="option actived">
             <font-awesome-icon class="icon" icon="chart-bar" />
             <p>Dashboard</p>
           </div>

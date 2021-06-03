@@ -23,8 +23,11 @@
           <div class="remove-option">
             <div class="pointer" />
             <p>Excluir</p>
+            <div class="delete-task">
+              <h1>Delete task</h1>
+              <DeleteTask />
+            </div>
           </div>
-
           <!--remove-option-->
         </div>
         <!--nav-task-->
@@ -37,9 +40,13 @@
 
 <script>
 import {} from "./styles/taskbar.styl";
+import DeleteTask from "./DeleteTask";
 
 export default {
   name: "TaskBar",
+  components: {
+    DeleteTask,
+  },
   props: {
     title: String,
     placeCategorie: String,

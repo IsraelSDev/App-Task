@@ -5,6 +5,7 @@
     <Categories />
     <TaskScreem />
     <AddTask display="none" />
+    <DeleteTask />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Navbar from "../components/Navbar";
 import Categories from "../components/Categories";
 import TaskScreem from "../components/TaskScreem";
 import AddTask from "../components/AddTask";
+import DeleteTask from "../components/DeleteTask";
 
 export default {
   name: "Home",
@@ -23,6 +25,7 @@ export default {
     Categories,
     TaskScreem,
     AddTask,
+    DeleteTask,
   },
 };
 </script>

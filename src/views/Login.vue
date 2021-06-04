@@ -51,4 +51,9 @@ export default {
   components: {},
 };
 </script>
+<style>
+* {
+  font-family: "Poppins", sans-serif;
+}
+</style>
 

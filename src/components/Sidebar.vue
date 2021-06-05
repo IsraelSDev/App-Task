@@ -31,7 +31,7 @@
           <!--option-settings-->
         </router-link>
         <a class="toggle-btn">
-          <h2>Button</h2>
+          <h2>>>></h2>
         </a>
       </div>
       <!--options-dash-->

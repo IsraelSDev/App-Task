@@ -14,13 +14,17 @@ mobile = 1150px;
 
     .nav-wraper {
         width: 30%;
-        float: right;
         display: flex;
         justify-content: flex-end;
         padding: 1% 2%;
 
         @media (max-width: mobile) {
             width: 100%;
+            justify-content: flex-center;
+
+            @media (max-width: 370px) {
+                justify-content: flex-end;
+            }
         }
     }
 

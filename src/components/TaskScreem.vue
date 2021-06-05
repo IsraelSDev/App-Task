@@ -13,7 +13,7 @@
       </div>
       <!--searchBar-->
       <TaskBar
-        title="Planejar desenvolvimento do app TodoList"
+        title="Planejar o desenvolvimento do app TodoList"
         placeCategorie="Urgente"
         categorie="categorie-urgent"
         checked="checked"

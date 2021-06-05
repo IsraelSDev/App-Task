@@ -30,6 +30,9 @@
           </div>
           <!--option-settings-->
         </router-link>
+        <a class="toggle-btn">
+          <h2>Button</h2>
+        </a>
       </div>
       <!--options-dash-->
     </div>
@@ -46,5 +49,20 @@ export default {
   name: "Sidebar",
   props: {},
   components: {},
+  methods: {
+    toggleCategories() {
+      const btn = $(".toggle-btn");
+      const cssCategories = $(".container-categories");
+      $(btn).click(function (e) {
+        e.preventDefault();
+        $(".toggle").toggle(".toggle");
+        $(cssCategories).toggle("600");
+      });
+      // alert("toggle");
+    },
+  },
+  mounted() {
+    this.toggleCategories();
+  },
 };
 </script>

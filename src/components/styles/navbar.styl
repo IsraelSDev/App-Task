@@ -1,11 +1,16 @@
+/* VAR MEDIA QUERIES */
+break-one = 1530px;
+break-two = 1310px;
+mobile = 1110px;
+
 .navbar {
     width: 100%;
     height: 100px;
     position: absolute;
     z-index: 900;
-    background-color: white
+    background-color: white;
     border: 0;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 
     .nav-wraper {
         width: 30%;
@@ -13,13 +18,17 @@
         display: flex;
         justify-content: flex-end;
         padding: 1% 2%;
+
+        @media (max-width: mobile) {
+            width: 100%;
+        }
     }
 
     .pic {
         width: 50px;
         height: 50px;
-        background-image: url("../../assets/pic.png");
-        background-size: contain
+        background-image: url('../../assets/pic.png');
+        background-size: contain;
         border-radius: 50%;
         margin-right: 10px;
     }
@@ -27,13 +36,19 @@
     .description {
         align-self: center;
         text-align: left;
-        h4{
-            font-size: 1.2rem
+
+        h4 {
+            font-size: 1.2rem;
         }
+
         p {
             color: #2693FF;
             font-weight: bold;
             font-size: 0.9rem;
         }
+    }
+
+    @media (max-width: mobile) {
+        height: 70px;
     }
 }

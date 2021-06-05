@@ -1,92 +1,137 @@
-.container-login 
-  display: flex
-  text-align: center
-  position: relative
+/* VAR MEDIA QUERIES */
+break-one = 1530px;
+break-two = 1310px;
+mobile = 1100px;
 
-.logo-part-wraper 
-  color: white
-  background-color: #2693FF
-  width: 35%
-  display: flex
-  justify-content: center
+/* END VAR MEDIA QUERIES */
+.container-login {
+  display: flex;
+  text-align: center;
+  position: relative;
 
+  @media (max-width: mobile) {
+    flex-direction: column;
+  }
+}
 
-.logo-part-box 
-  align-self: center
-  min-height: 100vh
-  font-weight: normal
-  text-align: left
-  padding-top: 50%
+.logo-part-wraper {
+  color: white;
+  background-color: #2693FF;
+  width: 35%;
+  display: flex;
+  justify-content: center;
 
-  p 
-    font-size: 3rem
-  
+  @media (max-width: mobile) {
+    width: 100%;
+    border-radius: 0px 0px 50px 50px;
+  }
+}
 
-  h6 
-    font-size: 1.2rem
-    font-weight: 100
-    opacity: 0.8
-  
+.logo-part-box {
+  align-self: center;
+  min-height: 100vh;
+  font-weight: normal;
+  text-align: left;
+  padding-top: 50%;
 
+  @media (max-width: mobile) {
+    padding: 1% 0 2% 0;
+    min-height: 0vh;
+    text-align: center;
+  }
 
-.form-login-wraper 
-  display: flex
-  justify-content: center
-  width: 75%
+  p {
+    font-size: 3rem;
+  }
 
-  .login-box 
-    text-align: left
-    width: 30%
-    margin: 0 auto
-    align-self: center
-  
+  h6 {
+    font-size: 1.2rem;
+    font-weight: 100;
+    opacity: 0.8;
+  }
+}
 
-  .title-form 
-    margin-bottom: 10%
-  
+.form-login-wraper {
+  display: flex;
+  justify-content: center;
+  width: 75%;
 
-  .email-wraper, .password-wraper 
-    p 
-      font-weight: 600
-      font-size: 0.9rem
-      opacity: 0.6
-      margin: 5px 0
-    
+  @media (max-width: mobile) {
+    width: 100%;
+    padding: 2% 0;
+  }
 
-    input 
-      border: 1px solid black
-      border-radius: 5px
-      width: 100%
-      height: 50px
-      margin-bottom: 15px
-      opacity: 0.5
-      padding: 2%
-      font-size: 1.2rem
-      outline: 0
-    
-    input:focus 
-      border: 2px solid blue
-    
-  input[type='submit'] 
-    margin: 10px 0
-    width: 100%
-    height: 60px
-    background-color: #1AD18F
+  .login-box {
+    text-align: left;
+    width: 30%;
+    margin: 0 auto;
+    align-self: center;
+
+    @media (max-width: break-one) {
+      width: 35%;
+
+      @media (max-width: break-two) {
+        width: 40%;
+      }
+    }
+
+    @media (max-width: mobile) {
+      width: 100%;
+      padding: 2% 0;
+    }
+  }
+
+  .title-form {
+    margin-bottom: 10%;
+  }
+
+  .email-wraper, .password-wraper {
+    p {
+      font-weight: 600;
+      font-size: 0.9rem;
+      opacity: 0.6;
+      margin: 5px 0;
+    }
+
+    input {
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 100%;
+      height: 50px;
+      margin-bottom: 15px;
+      opacity: 0.5;
+      padding: 2%;
+      font-size: 1.2rem;
+      outline: 0;
+    }
+
+    input:focus {
+      border: 2px solid blue;
+    }
+  }
+
+  input[type='submit'] {
+    margin: 10px 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1AD18F;
     border: 0;
-    color: white
-    font-size: 1rem
-    font-weight: bold
-    cursor: pointer
-    border-radius: 5px
-    margin-bottom: 50px
-  
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 50px;
+  }
 
-  .link-forgot-my-pass a 
-    color: #2693FF
-    font-weight: bold
-    font-size: 0.9rem
-  
-  .remover
-    text-align: center
-    padding: 20px
-  
+  .link-forgot-my-pass a {
+    color: #2693FF;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .remover {
+    text-align: center;
+    padding: 20px;
+  }
+}

@@ -21,9 +21,10 @@ mobile = 1110px;
 
   @media (max-width: laptop) {
     width: 10%;
-    @media (max-width: mobile){
+
+    @media (max-width: mobile) {
       width: 20%;
-      }
+    }
   }
 }
 
@@ -52,15 +53,23 @@ mobile = 1110px;
       p {
         font-size: 0.9rem;
         margin-top: 5px;
+        width: 100%
 
         @media (max-width: 1800px) {
           font-size: 0.8rem;
+          @media (max-width: 990px) {
+          font-size: 0.5rem;
+        }
         }
       }
 
       .icon {
         width: 100%;
         font-size: 2.5rem;
+
+        @media (max-width: 990px) {
+          font-size: 1.5rem;
+        }
       }
     }
 

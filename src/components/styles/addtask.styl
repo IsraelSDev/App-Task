@@ -1,3 +1,11 @@
+/* VAR FOR MEDIA QUERIES */
+mobile = 1150px;
+mobile-devices = 900px;
+mobile-regular = 800px;
+mobile-medium = 750px;
+mobile-small = 600px;
+mobile-ultra-small = 500px;
+
 .container-add-task img {
     width: 80px;
     height: 80px;
@@ -5,6 +13,11 @@
     top: 88%;
     right: 2%;
     cursor: pointer;
+
+    @media (max-width: mobile-devices) {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .add-new-task {
@@ -38,6 +51,11 @@
                 padding: -2% 0 0 0;
                 font-size: 1.3em;
                 text-decoration: none;
+
+                @media (max-width: mobile-regular) {
+                    font-size: 1.2em;
+                    padding: 0 10% 0 0;
+                }
             }
 
             display: flex;
@@ -82,6 +100,10 @@
                 margin: 0 10px;
                 color: #667a8d;
                 font-weight: bold;
+
+                @media (max-width: mobile-ultra-small) {
+                    font-size: 0.8rem;
+                }
             }
 
             input[type='radio'] {
@@ -92,12 +114,17 @@
             }
 
             .input-submit {
+                // background-color: blue;
                 text-align: right;
-                width: 70%;
                 padding: 0 8%;
+
+                @media (max-width: mobile-ultra-small) {
+                    padding: 0 10%;
+                }
             }
 
             input[type='submit'] {
+                width: 80%;
                 margin-right: 0;
                 background-color: #a6c1d2;
                 width: 150px;
@@ -108,6 +135,34 @@
                 font-size: 1rem;
                 border: 0;
                 cursor: pointer;
+
+                @media (max-width: mobile-medium) {
+                    width: 100%;
+
+                    @media (max-width: mobile-ultra-small) {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+
+            @media (max-width: mobile-medium) {
+                padding: 1%;
+            }
+        }
+
+        @media (max-width: mobile) {
+            width: 50%;
+
+            @media (max-width: mobile-devices) {
+                width: 60%;
+
+                @media (max-width: mobile-small) {
+                    width: 70%;
+
+                    @media (max-width: mobile-ultra-small) {
+                        width: 80%;
+                    }
+                }
             }
         }
     }
